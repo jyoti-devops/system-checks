@@ -1,0 +1,8 @@
+{
+  "checks": {
+    "disk_check": {
+      "command": "ruby /etc/sensu/plugins/check-disk-usage.rb -w 80 -c 90",
+      "interval": 60,
+      "subscribers": [ "ALL" ]
+    }
+  }
